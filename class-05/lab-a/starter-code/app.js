@@ -110,7 +110,7 @@ function multiplyArray(multArr) {
     }
     return[multiplyResult, `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${multiplyResult}.`]
 }
-
+ 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
