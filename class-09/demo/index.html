@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adopt a Kitten</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Adopt a Kitten</h1>
+    </header>
+    <main>
+      <h2>Kittens Available for Adoption:</h2>
+      <!-- forms -->
+      <form action="" id="kittinForm">
+        <fieldset>
+          <!-- catName, likes, img, isGoodWithKids, isGoodWithDogs, isGoodWithOtherCats, breed -->
+          <legend>adding a kitten</legend>
+          <label for="catName">kitten name</label>
+          <input id="catName" name="banana" type="text" placeholder="catName" />
+          <label for="likes">likes</label>
+          <input id="likes" name="likes" type="text" placeholder="split by ," />
+          <label for="img">cat image</label>
+          <input id="img" name="img" type="text" placeholder="cat image" />
+
+          <input type="checkbox" name="isGoodWithKids" id="isGoodWithKids" />
+          <label for="isGoodWithKids">isGoodWithKids</label>
+
+          <input type="checkbox" name="isGoodWithDogs" id="isGoodWithDogs" />
+          <label for="isGoodWithDogs">isGoodWithDogs</label>
+
+          <input
+            type="checkbox"
+            name="isGoodWithOtherCats"
+            id="isGoodWithOtherCats"
+          />
+          <label for="isGoodWithOtherCats">isGoodWithOtherCats</label>
+
+          <label for="breed">breed</label>
+          <input id="breed" name="breed" type="text" placeholder="breed" />
+          <input type="submit" value="add a kitten" />
+        </fieldset>
+      </form>
+      <div id="kittenProfiles">
+        <!-- generate this from js: -->
+        <!-- <article>
+          <h2></h2>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <img>
+        </article> -->
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
