@@ -1,0 +1,12 @@
+body {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/1cc4d086286129.5d94c1a63d306.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul#orders {
+    background-color: rgba(252, 101, 75, 0.25);
+    /* opacity: 0.5; */
+    font-weight: bold;
+    color: hsl(0, 18%, 10%);
+}
