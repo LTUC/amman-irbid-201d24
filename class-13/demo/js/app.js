@@ -3,8 +3,18 @@
 // target our order form from the html
 const orderForm = document.getElementById('orderForm');
 const orders = document.getElementById('orders');
-Coffee.drinks = [];
 
+// set the global array to empty
+// let drinks = [];
+Coffee.drinks = [];
+// let array1 = ['abrar', 23];
+
+// let normalObj = { name: 'abrar', age: 23 };
+// console.log('normal ', typeof normalObj);
+// let stringObj = JSON.stringify(normalObj);
+// console.log('stringified ', typeof stringObj);
+
+// console.log(JSON);
 
 // constructor function to create a basic drink
 function Coffee(name, size, milk, isHot, drinkType) {
@@ -16,23 +26,37 @@ function Coffee(name, size, milk, isHot, drinkType) {
 
     // add every drink that gets created into an array
     Coffee.drinks.push(this);
+    settingItems();
 }
 
-// set the global array to empty
+function settingItems() {
+    let data = JSON.stringify(Coffee.drinks);
+    console.log(data)
+    localStorage.setItem('coffee', data);
+}
 
-
+function gettingItems() {
+    let stringObj = localStorage.getItem('coffee');
+    // console.log(stringObj);
+    let normalObj = JSON.parse(stringObj);
+    // console.log(normalObj);
+    if (normalObj !== null) {
+        Coffee.drinks = normalObj;
+    }
+    renderOrders();
+}
 // event handler function to run every time the form is submitted
 function handleSubmit(event) {
     event.preventDefault();
     console.log(event.target);
 
     // get all the values from the form
-    const drink = event.target;
-    const name = drink.name.value;
-    const size = drink.size.value;
-    const isHot = drink.isHot.checked;
-    const dType = drink.drinkType.value;
-    const milk = drink.milk.value;
+    // const drink = event.target;
+    const name = event.target.name.value;
+    const size = event.target.size.value;
+    const isHot = event.target.isHot.checked;
+    const dType = event.target.drinkType.value;
+    const milk = event.target.milk.value;
 
     new Coffee(name, size, milk, isHot, dType);
 
@@ -64,3 +88,4 @@ function renderOrders() {
 
 // Add an event listener to the submit button
 orderForm.addEventListener('submit', handleSubmit);
+gettingItems();

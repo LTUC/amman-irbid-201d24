@@ -1,12 +1,14 @@
 body {
-    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/f5af4c99501165.5ef40a5103901.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }}
+  background-image: url("https://freedesignfile.com/upload/2018/09/Cup-with-coffee-time-background-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 ul#orders {
-    background-color: rgba(252, 101, 75, 0.25);
-    /* opacity: 0.5; */
-    font-weight: bold;
-    color: hsl(0, 18%, 10%);
+  background-color: #ca9e7b;
+  /* opacity: 0.5; */
+  font-weight: bold;
+  color: hsl(0, 18%, 10%);
+  width: 300px;
+  overflow: auto;
 }
