@@ -4,7 +4,7 @@
 
 - Some one on your project has merged a **_Pull Request_** into the `main` branch.
 - You push your code to your remote branch named `branch_name` and open a **_Pull Request_** to the `main` branch.
-- _GitHub_ informs you your code can not automatically merge into the `main` branch.
+- _GitHub_ informs you your code can not automaticly merge into the `main` branch.
 
 ### Step by Step Solution
 
@@ -17,7 +17,7 @@
 - `$ git branch`  
   _git will list local branches and put a \* in front of the branch you are in_
 
-1. Make sure you have nothing to commit. If you have un-committed changes, commit them.
+1. Make sure you have notthing to commit. If you have un-commited changes, commit them.
 
 - `$ git status`  
   _nothing to commit, working directory clean_
@@ -29,7 +29,7 @@
 1. Merge local copy of `origin/main` into your local branch called `branch_name`.
 
 - `$ git merge origin/main`  
-  _git will tell you what files have failed to automatically merge_
+  _git will tell you what files have failed to automaticly merge_
 
 1. Open each file with conflicts in your _text editor_.
 1. Find the conflicting changes.
@@ -56,7 +56,7 @@
 1. **_RUN YOUR CODE_**.
 
 - **This is possibly the most important step!**
-- **Just because you "handled" your merge conflict does not mean your haven't broken your app.**
+- **Just becuse you "handled" your merge conflict does not mean your haven't broken your app.**
 - Make any other needed changes to get everything working correctly
 
 1. Add your changes and commit.
