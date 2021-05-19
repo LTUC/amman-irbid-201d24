@@ -9,6 +9,7 @@ function Cat(name) {
   allCats.push(this);
   settingToLocalStorage();
 }
+
 Cat.prototype.render = function () {
   const listItem = document.createElement('li');
   listItem.textContent = this.name;
