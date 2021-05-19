@@ -2,7 +2,7 @@
 
 Welcome to Project Week! Here is a list of best practices for proper Git and GitHub workflow with your project team.
 
-*Note: Attendance is taken every scheduled meeting session at the usual time, including during project weeks.*
+_Note: Attendance is taken every scheduled meeting session at the usual time, including during project weeks._
 
 Before writing any code, take time to plan with your team. Make sure you are all in agreement about the goals of your application. Once you settle on an idea, prepare to pitch your idea to your instructor.
 
@@ -24,6 +24,7 @@ Within the repository, click on the "Project" tab and then click the button to "
 Populate your project with issues. Each issue should be a small item, typically linked to a feature task. As you work on an issue, assign it to yourself and move it into the "In progress" column. This will provide an easy way for everyone on the team to see the progress of each issue and know who is working on a particular issue.
 
 _Why:_
+
 > Issues are userful for managing small features that an individual or pair can reasonably tackle in a short period of time. The project board creates a clear visual of the team's current tasks and the current project status.
 
 When using GitHub issues, there is the added benefit of being able to close an issue through a commit message or a comment on a pull request (PR). For example, a commit message or comment can say "Closes #42" and the issue will automatically be closed when the pull request is merged. Github recognizes the following keywords to close an issue: `close`, `closes`, `closed`, `fixes`, and `fixed`.
@@ -33,9 +34,11 @@ You are welcome to use other project management tools besides GitHub Projects, b
 ## Project Requirements
 
 1. Linter
+
    - Your repository should include an `.eslintrc.json` file, which you can find in the main lecture repository for your class.
 
 1. .gitignore
+
    - Your repository should include a `.gitignore` file, which you can find in the main lecture repository for your class.
 
 1. Licensing
@@ -45,13 +48,12 @@ You are welcome to use other project management tools besides GitHub Projects, b
 
 Your project should utilize and be focused upon the technologies you learned in Code 201.
 
-Specifically, here are things that you ***will not*** be allowed to use:
+Specifically, here are things that you **_will not_** be allowed to use:
 
+- jQuery
 - Libraries/frameworks such as React, Vue, Angular, etc.
 - CSS frameworks such as Bootstrap or Skeleton
 - SASS, LESS, or any other CSS extension language
-
-You **may** learn and use other JavaScript libraries if you get permission from your instructor.
 
 If your team has any questions about what can or cannot be used, consult with the instructional staff.
 
@@ -117,6 +119,7 @@ Also, use this time to discuss any interpersonal issues that may arise. It is be
 Every day, the instructional team with circulate to your group for a formal stand-up. Stand-up should take approximately 10 minutes per team. Some instructors will opt for a second stand-up later in the day.
 
 _Why:_
+
 > Stand-ups give both your project team and instructional team insight into the current status of your project and the progress the team hopes to make each day.
 
 During stand-up, each team member will stand up and take turns discussing three points:
@@ -141,7 +144,7 @@ Day 5: Presentation Day!
 
 The entire team should follow the same process for synchronizing the code base on GitHub and on their local computers.
 
-The main branch is the source of your deployment, which should only contain fully functional code. A development branch should be created as a main source for external branches to be merged into, and only the development branch should be merged into main.
+The master branch is the source of your deployment, which should only contain fully functional code. A development branch should be created as a main source for external branches to be merged into, and only the development branch should be merged into master.
 
 All work should be on a feature branches with a meaningful name. Feature branches should be created off of the development branch. When the feature is completed, create a pull request from your feature branch to the development branch.
 
@@ -149,7 +152,7 @@ When you start a new feature and any time a pull request is merged into the deve
 
 Always make sure you are working off of the most up-to-date code base. This will prevent writing redundant code or overwriting code that you or another team member wrote.
 
-If a pull request from a teammate has been merged and you working on a branch but are not ready to push your changes, you can still pull those changes while continuing to work on your feature branch. To do so, add and commit any changes on your local feature branch. Check out your main or development branch and pull the changes. Then, check out your feature branch and run the command `git merge main` if the main branch was pulled and `git merge development` if the development branch was pulled.
+If a pull request from a teammate has been merged and you working on a branch but are not ready to push your changes, you can still pull those changes while continuing to work on your feature branch. To do so, add and commit any changes on your local feature branch. Check out your master or development branch and pull the changes. Then, check out your feature branch and run the command `git merge master` if the master branch was pulled and `git merge development` if the development branch was pulled.
 
 ## Pull Requests
 
@@ -159,7 +162,7 @@ If the pull request is not ready to be merged, leave detailed comments and reque
 
 When the pull request is merged to development, every team member should check out their own local development branch and pull the changes. Then, test the code in the browser to ensure that the desired features have been implemented correctly.
 
-Periodically, as determined by your team, make a pull request from the development branch to the main branch and follow the same process to test the changes to the main branch on everyone's local computers. Merging pull requests to the main branch should also update the deployed site, so confirm functionality there as well.
+Periodically, as determined by your team, make a pull request from the development branch to the master branch and follow the same process to test the changes to the master branch on everyone's local computers. Merging pull requests to the master branch should also update the deployed site, so confirm functionality there as well.
 
 After a pull request is merged, leave the branch on GitHub even though GitHub says you can delete it. This helps with your overall record-keeping on the project.
 
@@ -167,13 +170,13 @@ After a pull request is merged, leave the branch on GitHub even though GitHub sa
 
 Deploy your project on GitHub Pages and be prepared to present from the deployed version of your site.
 
-To deploy to GitHub pages, go to the "Settings" tab in the repository. Scroll down to the "GitHub Pages" section. In the "Source" dropdown, select your main branch and click "Save". You will then see a deployed URL and can click it to see your deployed site.
+To deploy to GitHub pages, go to the "Settings" tab in the repository. Scroll down to the "GitHub Pages" section. In the "Source" dropdown, select your master branch and click "Save". You will then see a deployed URL and can click it to see your deployed site.
 
-Note that it may take a few minutes for the deployed link to update and display your updated code as it appears on the main branch. If you do not see the deployed site updating after approximately 30 minutes, check the code base to ensure that there are no errors in your functionality when running your code locally.
+Note that it may take a few minutes for the deployed link to update and display your updated code as it appears on the master branch. If you do not see the deployed site updating after approximately 30 minutes, check the code base to ensure that there are no errors in your functionality when running your code locally.
 
 Deploy your site on the first day of project week.
 
-After the initial repository creation, scaffold out a basic `index.html` file with a heading element or something similar. Then push this code to GitHub and deploy it as a "proof of life" that the deployment worked correctly. As you continue to work on your project, the deployed site will update any time the team merges a pull request into the main branch. You also have the option to set this to a different branch, although it is most common to deploy from the main branch.
+After the initial repository creation, scaffold out a basic `index.html` file with a heading element or something similar. Then push this code to GitHub and deploy it as a "proof of life" that the deployment worked correctly. As you continue to work on your project, the deployed site will update any time the team merges a pull request into the master branch. You also have the option to set this to a different branch, although it is most common to deploy from the master branch.
 
 You are welcome to purchase a domain name, although this is not a requirement.
 
@@ -219,16 +222,18 @@ Individual effort is graded based on links to commits and Pull Requests that dem
 Technical merit is graded based on the following criteria:
 
 - Good and proper use of HTML
+
   - Clear, readable, and efficient structure
   - Uses semantic markup whenever possible
 
 - Good and proper use of CSS
+
   - Clear, readable, and efficient styles
   - Appropriate page layout for desktop
   - Well-organized file structure
-  - At least one CSS animation
 
 - Good and proper use of JavaScript
+
   - Clear, readable, and efficient code
   - Uses domain models to encapsulate data and behavior, such as objects and constructors
   - Responds to user events to receive/process user input and display new content to the user
