@@ -1,10 +1,18 @@
 #parent {
   background-color: #845ec2;
   width: 500px;
-  height: 500px;
+  height: 1000px;
+  position: static;
+  /* when static the top and other positions will not be applied
   top: 10px;
   left: 10px;
-  position: relative;
+  */
+
+  /* margin: 100px 150px 100px 150px; */
+
+  /* top: 10px;
+  left: 10px;
+  position: relative;  */
 }
 div {
   text-align: center;
@@ -15,9 +23,11 @@ div {
   background-color: #ff5e78;
   width: 200px;
   height: 100px;
-  top: 0px;
+  /* top: 0px;
   left: 10px;
-  position: sticky;
+  position: sticky; */
+
+  /*if you put it as position relative it will move it from the old place */
 }
 #two {
   background-color: #ffcc29;
@@ -31,6 +41,9 @@ div {
   background-color: #295939;
   width: 200px;
   height: 100px;
+  /*you can put it anywhere you want but it will be relative to the container if it has position relative
+  it will search to an upper parent until it find a relative parent  */
+  /* position: absolute;  */
 }
 p {
   font-family: "Architects Daughter", cursive;
